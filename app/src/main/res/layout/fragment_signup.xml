@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="32dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="16dp" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:background="@drawable/edittext_bg"/>
+
+                <Space android:layout_width="match_parent" android:layout_height="12dp" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:background="@drawable/edittext_bg"/>
+
+                <Space android:layout_width="match_parent" android:layout_height="12dp" />
+
+                <EditText
+                    android:id="@+id/etMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mobile_number"
+                    android:inputType="phone"
+                    android:minHeight="48dp"
+                    android:background="@drawable/edittext_bg"/>
+
+                <Space android:layout_width="match_parent" android:layout_height="12dp" />
+
+                <EditText
+                    android:id="@+id/etLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/level"
+                    android:minHeight="48dp"
+                    android:background="@drawable/edittext_bg"/>
+
+                <Space android:layout_width="match_parent" android:layout_height="12dp" />
+
+                <EditText
+                    android:id="@+id/etDateOfJoining"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="@string/date_of_joining"
+                    android:inputType="date"
+                    android:minHeight="48dp"
+                    android:background="@drawable/edittext_bg"/>
+
+                <Space android:layout_width="match_parent" android:layout_height="12dp" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"
+                    android:background="@drawable/edittext_bg"/>
+
+                <Space android:layout_width="match_parent" android:layout_height="16dp" />
+
+                <Button
+                    android:id="@+id/btnSignup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up"
+                    style="@style/Widget.MaterialComponents.Button"/>
+
+                <TextView
+                    android:id="@+id/tvLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="16dp"
+                    android:text="@string/already_have_an_account_login"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"/>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</FrameLayout> 
