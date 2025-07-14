@@ -2,6 +2,7 @@ package com.bnt.toastmasters.auth.domain
 
 sealed class AuthState {
     object Success : AuthState()
+    data class SuccessWithRole(val userType: String) : AuthState()
     data class Error(val message: String) : AuthState()
     object Loading : AuthState()
     object LoggedIn : AuthState()

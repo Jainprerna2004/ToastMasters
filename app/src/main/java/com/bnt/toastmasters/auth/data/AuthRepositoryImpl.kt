@@ -12,8 +12,11 @@ class AuthRepositoryImpl(
 ) : AuthRepository {
     override suspend fun login(email: String, password: String): AuthState {
         return try {
-            firebaseAuth.signInWithEmailAndPassword(email, password).await()
-            AuthState.Success
+            val result = firebaseAuth.signInWithEmailAndPassword(email, password).await()
+            val userId = result.user?.uid ?: throw Exception("User ID not found")
+            val doc = firestore.collection("users").document(userId).get().await()
+            val userType = doc.getString("userType") ?: "member"
+            AuthState.SuccessWithRole(userType)
         } catch (e: Exception) {
             AuthState.Error(e.message ?: "Login failed")
         }
@@ -23,7 +26,7 @@ class AuthRepositoryImpl(
         return try {
             val result = firebaseAuth.createUserWithEmailAndPassword(email, password).await()
             val userId = result.user?.uid ?: throw Exception("User ID not found")
-            val user = User(name, email, mobile, level, dateOfJoining)
+            val user = User(name, email, mobile, level, dateOfJoining, userType = "member")
             firestore.collection("users").document(userId).set(user).await()
             AuthState.Success
         } catch (e: Exception) {
