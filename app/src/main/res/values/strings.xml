@@ -11,4 +11,28 @@
     <string name="login">Login</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign up</string>
+
+    <string-array name="spinner_items">
+        <item>Select your role</item>
+        <item>VP Education</item>
+        <item>Member</item>
+    </string-array>
+
+    <!-- Bottom Navigation Titles -->
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_leaderboard">Leaderboard</string>
+    <string name="title_plus">Create</string>
+    <string name="title_reports">Reports</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_backout_members">Backout Members</string>
+    <string name="title_upcoming_meetings">Upcoming Meetings</string>
+    <string name="backout_members">Backout Members</string>
+    <string name="members_who_have_backed_out_of_meetings">Members who have backed out of meetings</string>
+    <string name="meeting_event">Meeting/Event</string>
+    <string name="create_new_meeting">Create new meeting</string>
+    <string name="your_speaking_journey_starts_here">Your speaking journey starts here</string>
+    <string name="welcome_to_toastmasters">Welcome to ToastMasters!</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="top_performers_this_month">Top performers this month</string>
+
 </resources>

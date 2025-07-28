@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/primary_color"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reports &amp; Analytics"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View detailed reports and club statistics"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:alpha="0.8" />
+
+        </LinearLayout>
+
+        <!-- Reports Grid -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Row 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/meeting_summary_report_card"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:background="@drawable/gradient_blue">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/ic_meeting_summary"
+                            android:layout_marginBottom="8dp"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Meeting"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Summary"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:alpha="0.8" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/user_wise_report_card"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:background="@drawable/gradient_green">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/ic_user_wise"
+                            android:layout_marginBottom="8dp"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="User Wise"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Report"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:alpha="0.8" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- Row 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/role_frequency_report_card"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:background="@drawable/gradient_orange">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/ic_role_frequency"
+                            android:layout_marginBottom="8dp"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Role"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Frequency"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:alpha="0.8" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/non_participating_report_card"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:background="@drawable/gradient_purple">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/ic_non_participating"
+                            android:layout_marginBottom="8dp"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Non"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Participating"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:alpha="0.8" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- Row 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/backout_members_report_card"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:background="@drawable/gradient_red">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/ic_backout"
+                            android:layout_marginBottom="8dp"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Backout"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Members"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:alpha="0.8" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/attendance_report_card"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:background="@drawable/gradient_teal">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/ic_attendance"
+                            android:layout_marginBottom="8dp"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Attendance"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Report"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:alpha="0.8" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <!-- Row 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/performance_report_card"
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:background="@drawable/gradient_indigo">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/ic_performance"
+                            android:layout_marginBottom="8dp"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Performance"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Report"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:alpha="0.8" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView> 

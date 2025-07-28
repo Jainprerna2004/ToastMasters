@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="purple_500">#9C27B0</color>
+    
+    <!-- App Colors -->
+    <color name="primary_color">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="accent_color">#FF4081</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_100">#F5F5F5</color>
 </resources>

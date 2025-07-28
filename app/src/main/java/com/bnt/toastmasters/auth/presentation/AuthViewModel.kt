@@ -1,5 +1,6 @@
 package com.bnt.toastmasters.auth.presentation
 
+import android.widget.Spinner
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -19,9 +20,9 @@ class AuthViewModel(private val useCases: AuthUseCases) : ViewModel() {
         }
     }
 
-    fun signup(name: String, email: String, mobile: String, level: String, dateOfJoining: String, password: String) {
+    fun signup(name: String, email: String, mobile: String, level: String, dateOfJoining: String, userType: String, password: String) {
         viewModelScope.launch {
-            val result = useCases.signup(name, email, mobile, level, dateOfJoining, password)
+            val result = useCases.signup(name, email, mobile, level, dateOfJoining,userType, password)
             _authState.value = result
         }
     }

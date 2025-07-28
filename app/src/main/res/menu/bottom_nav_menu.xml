@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_dashboard"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_leaderboard"
+        android:icon="@drawable/ic_leaderboard"
+        android:title="@string/title_leaderboard" />
+
+    <item
+        android:id="@+id/navigation_plus"
+        android:icon="@drawable/ic_add"
+        android:title="@string/title_plus" />
+
+    <item
+        android:id="@+id/navigation_reports"
+        android:icon="@drawable/ic_reports"
+        android:title="@string/title_reports" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/title_settings" />
+
+    <item
+        android:id="@+id/navigation_backout_members"
+        android:icon="@drawable/ic_backout"
+        android:title="@string/title_backout_members" />
+
+    <item
+        android:id="@+id/navigation_upcoming_meetings"
+        android:icon="@drawable/ic_meeting"
+        android:title="@string/title_upcoming_meetings" />
+</menu> 

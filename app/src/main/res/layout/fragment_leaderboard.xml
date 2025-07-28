@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_100">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/primary_color"
+        android:padding="16dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/leaderboard"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/top_performers_this_month"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:alpha="0.8" />
+
+    </LinearLayout>
+
+    <!-- Leaderboard List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/leaderboard_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:clipToPadding="false" />
+
+</LinearLayout> 
